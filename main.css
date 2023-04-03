@@ -1,0 +1,173 @@
+html,
+body {
+  background-image: url(./images/stars.gif);
+  overflow: hidden;
+  height: 100%;
+}
+
+.container {
+  margin: 250px auto;
+  width: 768px;
+  transform: scale(0.6);
+}
+
+.sun {
+  background-color: orange;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin: 105px auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.mercury {
+  background-color: #ac6339;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  margin-top: 10px;
+}
+
+.venus {
+  background-color: #e55c20;
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  margin-top: 30px;
+}
+
+.earth {
+  background-color: cadetblue;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  margin-top: 70px;
+}
+
+.mars {
+  background-color: chocolate;
+  width: 27px;
+  height: 27px;
+  border-radius: 100%;
+  margin-top: 110px;
+}
+
+.jupiter {
+  background-color: darkgoldenrod;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-top: 160px;
+}
+
+.saturn {
+  background-color: gold;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  margin-top: 200px;
+}
+
+.uranus {
+  background-color: brown;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  margin-top: 240px;
+}
+
+.neptune {
+  background-color: darkcyan;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin-top: 280px;
+}
+
+.pluto {
+  background-color: darkkhaki;
+  width: 23px;
+  height: 23px;
+  border-radius: 100%;
+  margin-top: 320px;
+}
+
+.mercury-halo {
+  width: 100px;
+  height: 100px;
+  margin: 85px auto;
+  animation: rotation 1.60057s linear infinite;
+}
+
+.venus-halo {
+  width: 172px;
+  height: 172px;
+  margin: 50px auto;
+  animation: rotation 3.3365s linear infinite;
+}
+
+.earth-halo {
+  width: 273px;
+  height: 273px;
+  margin: 0px auto;
+  animation: rotation 6.673s linear infinite;
+}
+
+.mars-halo {
+  width: 372px;
+  height: 372px;
+  margin: -50px auto;
+  animation: rotation 10.0095s linear infinite;
+}
+
+.jupiter-halo {
+  width: 475px;
+  height: 475px;
+  margin: -90px auto;
+  animation: rotation 13.346s linear infinite;
+}
+
+.saturn-halo {
+  width: 570px;
+  height: 570px;
+  margin: -150px auto;
+  animation: rotation 20.019s linear infinite;
+}
+
+.uranus-halo {
+  width: 670px;
+  height: 670px;
+  margin: -200px auto;
+  animation: rotation 26.692s linear infinite;
+}
+
+.neptune-halo {
+  width: 770px;
+  height: 770px;
+  margin: -250px auto;
+  animation: rotation 33.365s linear infinite;
+}
+
+.pluto-halo {
+  width: 870px;
+  height: 870px;
+  margin: -300px auto;
+  margin-left: -50px;
+  animation: rotation 40.038s linear infinite;
+}
+
+[class*="-halo"] {
+	position: absolute;
+	left: 0;
+	right: 0;
+	border: 1px solid #333;
+	border-radius: 100%;
+  }
+
+@keyframes rotation {
+  to {
+    transform: rotate(360deg);
+  }
+}
